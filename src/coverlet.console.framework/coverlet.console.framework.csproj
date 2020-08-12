@@ -3,9 +3,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net48</TargetFramework>
-    <ToolCommandName>coverlet.console.framework</ToolCommandName>
-    <PackAsTool>true</PackAsTool>
     <AssemblyTitle>coverlet.console.framework</AssemblyTitle>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
   </PropertyGroup>
 	  
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -18,6 +17,7 @@
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>coverlet.console.framework.snk</AssemblyOriginatorKeyFile>
     <DelaySign>true</DelaySign>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Data.DataSetExtensions" />
